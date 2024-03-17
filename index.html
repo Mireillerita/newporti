@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-
 <body class="bg-black m-0 p-0 decoration-0">
     <nav class="bg-red-600 w-full fixed font-serif md:bg-#111">
         <div class="container mx-auto px-4">
@@ -49,6 +48,7 @@
                 <div class="text-[40px] text-white my-5 mx-0">Hello, my name is</div> 
                 <div class="text-[75px] font-semibold text-white -ml-3">Mireille Rita</div> 
                 <div class="text-white text-[27px]">And I'm a <span class="text-red-800 font-semibold">frontedDev</span></div> 
+            <button class="inline-block bg-red-800 text-white text-[25px] mt-[20px] rounded-md">Hire me</button>
             </div>
         </div>
         <div class="flex-1 bg-cover bg-center h-screen" style="background-image: url(/src/IMG-20230711-WA0014_processed.jpg);"></div>
@@ -56,24 +56,22 @@
     <div class="bg-white">
         <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam numquam dolorem adipisci harum mollitia, natus eius, debitis inventore sed sint aliquid, reiciendis illo hic odit repudiandae. Eaque rerum sint magnam?</p>
     </div>
-    <script src="script.js"></script>
-    <script>
-        // JavaScript for toggling mobile menu
-        document.getElementById('menuButton').addEventListener('click', function() {
-            var mobileMenu = document.getElementById('mobileMenu');
-            var closeButton = document.getElementById('closeButton');
-            mobileMenu.classList.toggle('hidden');
-            closeButton.classList.toggle('hidden');
-        });
+    <!--about section start-->
+    <div class="max-width bg-white">
+        <h1 class="bg-white text-black text-3xl flex items-center">About me</h1>
+        <div class="flex">
+            <div class="column-left flex items-start">
+                <img style="height: 20rem;" class="w-auto" src="./src/PXL_20231217_151130832.PORTRAIT~5.jpg" alt="">
+            </div>
+            <!-- Add additional content or styles here -->
+        </div>
+    </div>v>
+    </div>
 
-        // JavaScript for hiding mobile menu when close button is clicked
-        document.getElementById('closeButton').addEventListener('click', function() {
-            var mobileMenu = document.getElementById('mobileMenu');
-            var closeButton = document.getElementById('closeButton');
-            mobileMenu.classList.add('hidden');
-            closeButton.classList.add('hidden');
-        });
-    </script>
+
+
+    <script src="script.js"></script>
+    
 </body>
 
 
