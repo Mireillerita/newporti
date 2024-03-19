@@ -5,5 +5,14 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
-
+},
+  module.exports = {
+    theme: {
+      extend: {
+        spacing: {
+          '80': '20rem',
+        },
+      },
+    },
+    plugins: [],
+  }

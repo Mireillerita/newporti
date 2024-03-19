@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<body class="bg-black m-0 p-0 decoration-0">
+
+<body class="">
     <nav class="bg-red-600 w-full fixed font-serif md:bg-#111">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center">
-                <div class="font-semibold text-[35px] t"><a href="#">Portfo<span class="text-red-800">lio</span></a></div>
+                <div class="font-semibold text-[35px] t"><a href="#">Portfo<span class="text-red-800">lio</span></a>
+                </div>
                 <!-- Responsive Menu Button -->
                 <div class="md:hidden menu text-white" id="menuButton"><i class="fas fa-bars"></i></div>
                 <!-- Close Button -->
@@ -36,49 +41,353 @@
                 <div class="menu text-white self-start" id="closeButton"><i class="fas fa-times"></i></div>
             </div>
             <ul class="text-white text-center flex-1 space-y-4">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
                 <li><a href="#">Teams</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-        <div class="flex-1 flex items-center justify-center px-4">
+        <div id="Home" class=" bg-black flex-1 flex items-center justify-center px-4">
+            <!-- responsive about -->
+            <div class="md:flex flex-row"></div>
             <div class="text-center md:text-left">
-                <div class="text-[40px] text-white my-5 mx-0">Hello, my name is</div> 
-                <div class="text-[75px] font-semibold text-white -ml-3">Mireille Rita</div> 
-                <div class="text-white text-[27px]">And I'm a <span class="text-red-800 font-semibold">frontedDev</span></div> 
-            <button class="inline-block bg-red-800 text-white text-[25px] mt-[20px] rounded-md">Hire me</button>
+                <div class="text-[40px] text-white my-5 mx-0">Hello, my name is</div>
+                <div class="text-[75px] font-semibold text-white -ml-3">Mireille Rita</div>
+                <div class="text-white text-[27px]">And I'm a <span class="text-red-800 font-semibold"
+                        id="titleSpan">frontedDev|</span></div>
+                <button class="inline-block bg-red-800 text-white text-[25px] mt-[20px] rounded-md">Hire me</button>
             </div>
         </div>
-        <div class="flex-1 bg-cover bg-center h-screen" style="background-image: url(./photoes/IMG-20230711-WA0014_processed.jpg);"></div>
+        <div class="flex-1 bg-cover bg-center h-screen"
+            style="background-image: url(./photoes/IMG-20230711-WA0014_processed.jpg);"></div>
     </div>
-    <div class="bg-white">
-        <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam numquam dolorem adipisci harum mollitia, natus eius, debitis inventore sed sint aliquid, reiciendis illo hic odit repudiandae. Eaque rerum sint magnam?</p>
-    </div>
-    <!--about section start-->
-    <div class="max-width bg-white py-[100px] ">
-        <h1 class="underline-offset-2 bg-white text-black text-3xl flex items-center justify-center font-bold pb-[20px]">About me</h1>
-        
-        <div class="flex items-center flex-wrap justify-between ">
-            <div class="column-left flex items-start">
-                <img style="height: 20rem;" class="w-auto object-cover border-r-[6px] " src="./photoes/PXL_20231217_151130832.PORTRAIT~5.jpg" alt="">
+    <div id="About" class="container mx-auto px-4 text-center mt-20">
+        <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">About me</h1>
+        <div class="text-center mb-8 md:mb-12 flex flex-row items-center justify-center">
+
+            <span class="block w-10 h-1 bg-black mx-4"></span>
+            <p class=" text-red-500 font-bold font-serif text-[10px] md:text-sm">Who I am</p>
+            <span class="block w-10 h-1 bg-black mx-4"></span>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10">
+            <div class="md:w-1/2">
+                <img src="./photoes/PXL_20231217_151130832.PORTRAIT~5.jpg" class="ml-20 rounded-md h-[500px] w-[400px]"
+                    alt="Profile Image" />
             </div>
-            <!-- Add additional content or styles here -->
+            <div class="mt-8 md:mt-16 md:w-1/2">
+                <h1 class="text-xl md:text-2xl lg:text-3xl mt-4 md:mt-0">I'm Mireille Rita and I am <span
+                        class="text-red-700 font-semibold" id="titleSpan">frontedDev|</span>
+                </h1>
+                <p class="text-sm md:text-base lg:text-lg mt-2 md:mt-4">Hello! I'm Mireille Rita, a frontend developer
+                    fueled by a
+                    passion
+                    for
+                    technology
+                    and backed by a background in electronic and telecommunication engineering. With a keen eye for
+                    design
+                    and a knack for problem-solving, I thrive on crafting intuitive and visually appealing user
+                    experiences. Continuously learning and adapting to new trends, I'm dedicated to pushing the
+                    boundaries of web development to create innovative and impactful digital solutions. Let's
+                    collaborate and turn your ideas into reality!
+                </p>
+                <button class="bg-red-600 text-white px-6 py-3 mt-4 md:mt-6 inline-block rounded-md">Download
+                    CV</button>
+            </div>
         </div>
-        <div class="w-[55%]">
-            <div> I am Mireille and I'm a <span>frontend DEv</span></div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, porro odit corrupti nulla non incidunt tempore laboriosam labore ab officiis cum dolorum fuga velit facere sunt quod? Cumque, necessitatibus assumenda!</p>
-<a href="#">Download Cv</a>
+    </div>
+    <div class="bg-black">
+        <div class="container mx-auto px-4 text-center mt-20 text-white pt-20">
+            <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">My project</h1>
+            <div class="text-center mb-8 md:mb-12 flex flex-row items-center justify-center">
+                <span class="block w-10 h-1 bg-white mx-4"></span>
+                <p class="text-red-500 font-bold font-serif text-[10px] md:text-sm">what worked on</p>
+                <span class="block w-10 h-1 bg-white mx-4"></span>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row pb-16 md:justify-center">
+            <div class="bg-gray-800 h-64 w-80 ml-24 mr-1 md:w-auto md:mr-8 rounded-md text-center mb-8 md:mb-0">
+                <div class="items-center">
+                    <i class="fa-solid fa-paintbrush fa-2xl" style="color: #ff0000;height: 50px; width: 70px;"></i>
+                    <h1 class="text-white">Web designer</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi
+                        quo illo enim.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 h-64 w-80  md:w-auto md:mx-4 rounded-md text-center mb-8 md:mb-0">
+                <div class="items-center">
+                    <i class="fa-solid fa-paintbrush fa-2xl" style="color: #ff0000;height: 50px; width: 70px;"></i>
+                    <h1 class="text-white">Web designer</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi
+                        quo illo enim.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 h-64 mr-24 ml-1 w-80 md:w-auto md:ml-8 rounded-md text-center">
+                <div class="items-center">
+                    <i class="fa-solid fa-paintbrush fa-2xl" style="color: #ff0000;height: 50px; width: 70px;"></i>
+                    <h1 class="text-white">Web designer</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi
+                        quo illo enim.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white ">
+        <div class="container mx-auto px-4 text-center mt-8 text-black pt-20 ">
+            <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">My skills</h1>
+            <div class="text-center mb-8 md:mb-12 flex flex-row items-center justify-center">
+                <span class="block w-10 h-1 bg-black mx-4"></span>
+                <p class="text-red-500 font-bold font-serif text-[10px] md:text-sm">what I know</p>
+                <span class="block w-10 h-1 bg-black mx-4"></span>
+            </div>
+        </div>
+        <div class="flex items-center justify-between">
+            <div class="items-start w-1/3 ml-36">
+                <h1 class="font-bold text-[20px] mb-3">My creative & experiences</h1>
+                <p class="">The person is skilled in HTML, CSS, JavaScript, SQL, and MATLAB. They excel in web
+                    development with HTML, CSS, and JavaScript, and are proficient in SQL for database management.
+                    Additionally, they have expertise in MATLAB for data analysis and algorithm development. These
+                    skills enable them to deliver versatile solutions across web development, data analytics, and
+                    engineering applications.</p>
+                <button class="bg-red-600 text-white px-8 py-4 mt-4 md:mt-6 inline-block rounded-md">Read more</button>
+
+            </div>
+
+            <div class="w-[50%] flex flex-col ml-20 ">
+                <div class="w-full mb-5">
+                    <div class="flex flex-row justify-between font-semibold">
+                        <h1 class="items-start">HTML</h1>
+                        <h1 class=" pr-16">90%</h1>
+                    </div>
+                    <div class="bg-gray-300 h-1 w-[90%]">
+                        <div class="bg-red-600 w-[90%] h-1"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="w-full mb-5">
+                    <div class="flex flex-row justify-between font-semibold">
+                        <h1 class="items-start">CSS</h1>
+                        <h1 class=" pr-16">60%</h1>
+                    </div>
+                    <div class="bg-gray-300 h-1 w-[90%]">
+                        <div class="bg-red-600 w-[60%] h-1"></div>
+                    </div>
+                </div>
+                <div class="w-full mb-5">
+                    <div class="flex flex-row justify-between font-semibold">
+                        <h1 class="items-start">JavaScript</h1>
+                        <h1 class=" pr-16">80%</h1>
+                    </div>
+                    <div class="bg-gray-300 h-1 w-[90%]">
+                        <div class="bg-red-600 w-[80%] h-1"></div>
+                    </div>
+                </div>
+                <div class="w-full mb-5">
+                    <div class="flex flex-row justify-between font-semibold">
+                        <h1 class="items-start">MySQL</h1>
+                        <h1 class=" pr-16">50%</h1>
+                    </div>
+                    <div class="bg-gray-300 h-1 w-[90%]">
+                        <div class="bg-red-600 w-[50%] h-1"></div>
+                    </div>
+                </div>
+
+                <div class="w-full mb-5">
+                    <div class="flex flex-row justify-between font-semibold">
+                        <h1 class="items-start">MATLAB</h1>
+                        <h1 class=" pr-16">80%</h1>
+                    </div>
+                    <div class="bg-gray-300 h-1 w-[90%]">
+                        <div class="bg-red-600 w-[80%] h-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-black">
+        <div class="container mx-auto px-4 text-center mt-20 text-white pt-20">
+            <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">My teams</h1>
+            <div class="text-center mb-8 md:mb-12 flex flex-row items-center justify-center">
+                <span class="block w-10 h-1 bg-white mx-4"></span>
+                <p class="text-red-500 font-bold font-serif text-[10px] md:text-sm">who is with me</p>
+                <span class="block w-10 h-1 bg-white mx-4"></span>
+            </div>
+        </div>
+        <div id="team">
+
+
+            <div class="flex flex-col md:flex-row pb-16 md:justify-center">
+                <div id="photo" class="bg-gray-800 h-64 w-80 mr-5 hover:bg-red-800 cursor-pointer rounded-md ">
+                    <div class="flex items-center justify-center  flex-col">
+                        <div
+                            class="rounded-full bg-red-800 w-[11vh] h-[11vh] flex items-center justify-center hover:bg-white">
+                            <div class="rounded-full   flex items-center justify-center">
+                                <img src="./photoes/PXL_20231217_151130832.PORTRAIT~5.jpg" class="rounded-full w-16">
+                            </div>
+                        </div>
+                        <h1 class="text-white"> some one</h1>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            dolorem
+                            .</p>
+                    </div>
+                </div>
+
+                <div id="photo" class="bg-gray-800 h-64 w-80 mr-5 hover:bg-red-800 cursor-pointer rounded-md ">
+                    <div class="flex items-center justify-center  flex-col">
+                        <div
+                            class="rounded-full bg-red-800 w-[10vh] h-[10vh] flex items-center justify-center hover:bg-white cursor-move">
+                            <div class="rounded-full   flex items-center justify-center">
+                                <img src="./photoes/Screenshot_20230914-175010.png" class="rounded-full w-14 h-14">
+                            </div>
+                        </div>
+                        <h1 class="text-white"> some one</h1>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            dolorem
+                            .</p>
+                    </div>
+                </div>
+
+                <div id="photo" class="bg-gray-800 h-64 w-80 mr-5 hover:bg-red-800 cursor-pointer rounded-md ">
+                    <div class="flex items-center justify-center  flex-col">
+                        <div
+                            class="rounded-full bg-red-800 w-[11vh] h-[11vh] flex items-center justify-center hover:bg-white">
+                            <div class="rounded-full   flex items-center justify-center">
+                                <img src="./photoes/250786882861_status_378c8e36baef4fabaadf28c43c726840~2.jpg"
+                                    class="rounded-full w-16">
+                            </div>
+                        </div>
+                        <h1 class="text-white"> some one</h1>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            dolorem
+                            .</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row pb-16 md:justify-center">
+                <div id="photo" class="bg-gray-800 h-64 w-80 mr-5 hover:bg-red-800 cursor-pointer rounded-md ">
+                    <div class="flex items-center justify-center  flex-col">
+                        <div
+                            class="rounded-full bg-red-800 w-[11vh] h-[11vh] flex items-center justify-center hover:bg-white">
+                            <div class="rounded-full   flex items-center justify-center">
+                                <img src="./photoes/250787279120_status_bcdf5c19c7bf46018da07b3d5a70b2c8~2.jpg"
+                                    class="rounded-full w-16">
+                            </div>
+                        </div>
+                        <h1 class="text-white"> some one</h1>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            dolorem
+                            .</p>
+                    </div>
+                </div>
+
+                <div id="photo" class="bg-gray-800 h-64 w-80 mr-5 hover:bg-red-800 cursor-pointer rounded-md ">
+                    <div class="flex items-center justify-center  flex-col">
+                        <div
+                            class="rounded-full bg-red-800 w-[11vh] h-[11vh] flex items-center justify-center hover:bg-white cursor-move">
+                            <div class="rounded-full   flex items-center justify-center">
+                                <img src="./photoes/3e4d29af-0d82-4e43-97c0-44d5c467964b.jpg"
+                                    class="rounded-full w-16 h-16">
+                            </div>
+                        </div>
+                        <h1 class="text-white"> some one</h1>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            dolorem
+                            .</p>
+                    </div>
+                </div>
+
+
+
+                <div id="photo" class="bg-gray-800 h-64 w-80 mr-5 hover:bg-red-800 cursor-pointer rounded-md ">
+                    <div class="flex items-center justify-center  flex-col">
+                        <div
+                            class="rounded-full bg-red-800 w-[8vh] h-[8vh] flex items-center justify-center hover:bg-white">
+                            <div class="rounded-full   flex items-center justify-center">
+                                <img src="./photoes/ab1fbe63e1d765999d581c61e2a3bd86.jpg"
+                                    class="rounded-full h-12 w-12">
+                            </div>
+                        </div>
+                        <h1 class="text-white"> some one</h1>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            dolorem
+                            .</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 text-center mt-20">
+        <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">Contact me</h1>
+        <div class="text-center mb-8 md:mb-12 flex flex-row items-center justify-center">
+
+            <span class="block w-10 h-1 bg-black mx-4"></span>
+            <p class=" text-red-500 font-bold font-serif text-[10px] md:text-sm">get in touch</p>
+            <span class="block w-10 h-1 bg-black mx-4"></span>
+        </div>
+        <div>
+            <p></p>
+        </div>
+        <div class="flex items-center justify-between">
+            <div class="items-start w-1/3 ml-36">
+                <h1 class="font-bold text-[20px] mb-3">Get in touch</h1>
+                <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga
+                    corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?
+
+                <div class="flex items-center gap-5 mt-6">
+                    <i class="fa-solid fa-user fa-2xl pb-4" style="color: #ff0000;"></i>
+                    <div class="top-0">
+                        <h1 class="font-semibold">Name</h1>
+                        <h1 class="border-l pl-2">Mireille Rita</h1>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-5 mt-6">
+                    <i class="fa-solid fa-location-dot fa-2xl" style="color: #ff0000;"></i>
+
+                    <div class="top-0">
+                        <h1 class="font-semibold">Adress</h1>
+                        <h1 class="border-l pl-2">Kamonyi-Ruyenzi</h1>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-5 mt-6">
+                    <i class="fa-solid fa-envelope fa-2xl" style="color: #ff0000;"></i>
+
+                    <div class="top-0">
+                        <h1 class="font-semibold">Email</h1>
+                        <h1 class="border-l pl-2">mireillendahimana@gmail.co</h1>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="flex flex-row">
+
+                <h1 class="font-bold text-[20px] mb-3">Message me</h1>
+                <input type="text" name="Name">
+                <input type="text" name="Email">
+
+                <button class="bg-red-600 text-white px-8 py-4 mt-4 md:mt-6 inline-block rounded-md">Read
+                    more</button>
+            </div>
+
         </div>
 
-    </div>
-    </div>
 
 
-
-    <script src="script.js"></script>
-    
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./script.js"></script>
 </body>
 
 
